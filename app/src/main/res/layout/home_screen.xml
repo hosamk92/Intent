@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/HomeScreen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.immortal.task2.HomeScreen"
+    android:weightSum="1"
+    android:background="@drawable/old_paper_01_by_silver_">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@color/colorPrimary"
+        android:id="@+id/ImagV_Avatar" />
+
+    <Button
+        android:text="Select Avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="SelectAvatar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/colorActivatedHighlight" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Password"
+        android:textSize="20sp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="79dp" />
+
+    <TextView
+        android:text="Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Gender"
+        android:textSize="20sp"
+        android:layout_above="@+id/TV_Password"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp" />
+
+    <TextView
+        android:text="Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Year"
+        android:textSize="20sp"
+        android:layout_above="@+id/TV_Gender"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Name"
+        android:textSize="20sp"
+        android:layout_above="@+id/TV_Year"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Email"
+        android:textSize="20sp"
+        android:layout_below="@+id/ImagV_Avatar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+
+</RelativeLayout>
